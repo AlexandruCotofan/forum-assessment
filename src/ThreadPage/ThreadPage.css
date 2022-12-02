@@ -1,0 +1,14 @@
+#thread-page {
+    display: flex;
+    flex-direction: column;
+}
+
+#thread-page > a {
+    border: 1px solid black;
+    max-width: max-content;
+    align-self: center;
+    text-decoration: none;
+    color:black;
+    padding:0.5em;
+    margin-top: 0.5em;
+}

@@ -1,0 +1,11 @@
+.forum-post {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0em 3em;
+    justify-content: space-between;
+}
+
+.forum-post:hover {
+    border-color: blue;
+}

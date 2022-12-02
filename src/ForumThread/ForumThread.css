@@ -1,0 +1,16 @@
+.forum-thread {
+    display: flex;
+    border: 1px solid black;
+    margin: 0em 3em;
+    justify-content: space-between;
+    text-decoration: none;
+    color:black;
+}
+
+.forum-thread:hover {
+    border-color: blue;
+}
+
+.forum-thread > h2 {
+    width: 100%;
+}
