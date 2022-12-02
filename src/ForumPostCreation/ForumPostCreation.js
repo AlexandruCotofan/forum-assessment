@@ -15,9 +15,9 @@ function ForumPostCreation() {
                 <option value="clarification">Clarification</option>
             </select>
             <label>Post title:</label>
-            <input type="text" id="forum-post-title" required/>
+            <input type="text" name="post-title" required/>
             <label>Post content:</label>
-            <input type="text" id="forum-post-content" required/>
+            <input type="text" name="post-content" required/>
             <label>Post image (optional):</label>
             <input type="text" id="post-image"/>
             <button type="submit">Create post</button>

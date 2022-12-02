@@ -22,7 +22,7 @@ function ThreadPage() {
   return (
     <div id="thread-page">
       <header>
-        <h1>Thread Name</h1>
+        <h1>{threadTitle}</h1>
       </header>
       {postsArray.map((post) => (
         <ForumPost
