@@ -8,13 +8,11 @@ import ThreadPage from './ThreadPage/ThreadPage.js';
 function App() {
   return (
     <div className="App">
-      {/* <ForumPage />
-      <a href="/create">Create post</a> */}
       <Router>
         <Routes>
           <Route path='/' exact element={<ForumPage />}/>
           <Route path='/create' exact element={<ForumPostCreation />}/>
-          <Route path='/thread' exact element={<ThreadPage />}/>
+          <Route path='/threads' exact element={<ThreadPage />}/>
         </Routes>
       </Router>
     </div>

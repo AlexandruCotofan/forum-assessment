@@ -1,22 +1,27 @@
 import "./ForumPostCreation.css";
 
 function ForumPostCreation() {
+    const threadTitle = window.location.href.split("=")[1];
+
     return(
-        <form className="forum-post-form">
+        <form className="forum-post-form" method="POST" action="http://localhost:3001/create">
             <h1>Create post:</h1>
+            <label>Thread:</label>
+            <input type="text" name = "title" value = {threadTitle} readonly/>
             <label>Post type:</label>
-            <select name="forum-post-type">
+            <select name="category">
                 <option value="question">Question</option>
                 <option value="suggestion">Suggestion</option>
                 <option value="clarification">Clarification</option>
             </select>
             <label>Post title:</label>
-            <input type="text" id="forum-post-title" required/>
-            <label>Post content:</label>
-            <input type="text" id="forum-post-content" required/>
+            <input type="text" name="post-title" required/>
+            <label>Post body:</label>
+            <input type="text" name="post-body" required/>
             <label>Post image (optional):</label>
-            <input type="text" id="forum-post-image"/>
+            <input type="text" id="post-image"/>
             <button type="submit">Create post</button>
+            <a href="../">Back</a>
         </form>
     );
 }
