@@ -1,6 +1,7 @@
 import "./ForumPostCreation.css";
 
-function ForumPostCreation() {
+function ForumPostCreation(props) {
+    // props.title (for thread title)
     return(
         <form className="forum-post-form">
             <h1>Create post:</h1>
@@ -12,11 +13,12 @@ function ForumPostCreation() {
             </select>
             <label>Post title:</label>
             <input type="text" id="forum-post-title" required/>
-            <label>Post content:</label>
-            <input type="text" id="forum-post-content" required/>
+            <label>Post body:</label>
+            <input type="text" id="forum-post-body" required/>
             <label>Post image (optional):</label>
             <input type="text" id="forum-post-image"/>
             <button type="submit">Create post</button>
+            <a href="../">Back</a>
         </form>
     );
 }
